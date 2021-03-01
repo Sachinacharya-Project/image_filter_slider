@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #111;
+}
+
+.content {
+  display: block;
+  height: 500px;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.content div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 400px;
+  background: yellow;
+  overflow: hidden;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.content div.image-container-before {
+  width: 200px;
+}
+
+.content div img {
+  width: 400px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content div.slider {
+  height: 100%;
+  width: 5px;
+  background: white;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  pointer-events: none;
+  cursor: pointer;
+  -webkit-transition: none;
+  transition: none;
+}
+/*# sourceMappingURL=style.css.map */
